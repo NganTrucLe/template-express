@@ -1,4 +1,5 @@
-# Ads Management Resident Website
+# Template MVC express website
+CRUD operations, pagination.
 
 ## Installation
 
