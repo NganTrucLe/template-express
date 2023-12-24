@@ -19,15 +19,15 @@ router.post("/add", async (req, res) => {
 
 router.get("/edit", async (req, res) => {
   const id = req.query.id || 0;
-  let Product = await Product.findById(id);
-  if (Product === null) {
+  let product = await Product.findById(id);
+  if (product === null) {
     return res.redirect("/admin/products");
   }
-  res.render("vwProduct/edit", { Product });
+  res.render("vwProduct/edit", { product });
 });
 
 router.post("/del", async (req, res) => {
-  await Product.delete(req.body.CatId);
+  await Product.delete(req.body.ProID);
   res.redirect("/admin/products");
 });
 

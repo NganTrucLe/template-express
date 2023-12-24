@@ -5,32 +5,32 @@
     </h5>
     <div class="card-body">
       <div class="form-group">
-        <label for="txtCatID">#</label>
+        <label for="txtProID">#</label>
         <input
           type="text"
-          name="CatID"
-          id="txtCatID"
-          class="form-control mt-3"
+          name="ProID"
+          id="txtProID"
+          class="form-control"
           readonly
-          value="{{this.category.CatID}}"
+          value="{{this.product.ProID}}"
         />
       </div>
-      <div class="form-group">
-        <label for="txtCatName">Category Name</label>
+      <div class="form-group mt-3">
+        <label for="txtProName">Product Name</label>
         <input
           type="text"
-          name="CatName"
-          id="txtCatName"
-          class="form-control mt-3"
+          name="ProName"
+          id="txtProName"
+          class="form-control"
           placeholder="Laptop"
-          value="{{this.category.CatName}}"
+          value="{{this.product.ProName}}"
         />
       </div>
     </div>
     <div class="card-footer text-muted">
       <a
         class="btn btn-outline-success mr-3"
-        href="/admin/categories"
+        href="/admin/products"
         role="button"
       >
         <i class="bi bi-skip-backward-fill"></i>
@@ -39,7 +39,7 @@
       <button
         type="submit"
         class="btn btn-danger"
-        formaction="/admin/categories/del"
+        formaction="/admin/products/del"
       >
         <i class="fa fa-trash-o" aria-hidden="true"></i>
         Delete
@@ -47,7 +47,7 @@
       <button
         type="submit"
         class="btn btn-primary"
-        formaction="/admin/categories/patch"
+        formaction="/admin/products/patch"
       >
         <i class="bi bi-check2"></i>
         Save

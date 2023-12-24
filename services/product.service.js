@@ -66,7 +66,7 @@ class ProductService {
   }
 
   async delete(id) {
-    await this.model.deleteOne({ ProId: id });
+    await this.model.deleteOne({ ProID: id });
   }
 
   async patch(Product) {
