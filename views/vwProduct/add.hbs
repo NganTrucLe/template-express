@@ -1,0 +1,63 @@
+<form method="post">
+  <div class="card">
+    <h5 class="card-header">
+      New Product
+    </h5>
+    <div class="card-body">
+      <div class="form-group mt-3">
+        <label for="txtCatName">#</label>
+        <input type="text" name="ProID" id="txtProID" class="form-control" />
+      </div>
+      <div class="form-group mt-3">
+        <label for="txtCatName">Product Name</label>
+        <input
+          type="text"
+          name="ProName"
+          id="txtProName"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group mt-3">
+        <label for="txtCatName">Tiny description</label>
+        <input
+          type="text"
+          name="TinyDes"
+          id="txtTinyDes"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group mt-3">
+        <label for="txtCatName">Price</label>
+        <input type="number" name="Price" id="txtPrice" class="form-control" />
+      </div>
+      <div class="form-group mt-3">
+        <label for="txtCatId">Category</label>
+        <input
+          type="text"
+          name="CatId"
+          id="txtCatName"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group mt-3">
+        <label for="txtCatName">Quantity</label>
+        <input
+          type="number"
+          name="Quantity"
+          id="txtQuantity"
+          class="form-control"
+        />
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      <a class="btn btn-outline-success" href="/admin/products" role="button">
+        <i class="bi bi-skip-backward-fill"></i>
+        List
+      </a>
+      <button type="submit" class="btn btn-primary">
+        <i class="bi bi-check2"></i>
+        Save
+      </button>
+    </div>
+  </div>
+</form>

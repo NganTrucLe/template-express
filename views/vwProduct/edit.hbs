@@ -1,0 +1,57 @@
+<form method="post">
+  <div class="card">
+    <h5 class="card-header">
+      Edit Category
+    </h5>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="txtCatID">#</label>
+        <input
+          type="text"
+          name="CatID"
+          id="txtCatID"
+          class="form-control mt-3"
+          readonly
+          value="{{this.category.CatID}}"
+        />
+      </div>
+      <div class="form-group">
+        <label for="txtCatName">Category Name</label>
+        <input
+          type="text"
+          name="CatName"
+          id="txtCatName"
+          class="form-control mt-3"
+          placeholder="Laptop"
+          value="{{this.category.CatName}}"
+        />
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      <a
+        class="btn btn-outline-success mr-3"
+        href="/admin/categories"
+        role="button"
+      >
+        <i class="bi bi-skip-backward-fill"></i>
+        List
+      </a>
+      <button
+        type="submit"
+        class="btn btn-danger"
+        formaction="/admin/categories/del"
+      >
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+        Delete
+      </button>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        formaction="/admin/categories/patch"
+      >
+        <i class="bi bi-check2"></i>
+        Save
+      </button>
+    </div>
+  </div>
+</form>
